@@ -42,7 +42,7 @@
   }
 
   img {
-    width: 120%;
+    width: 100%;
   }
 }
 
@@ -79,11 +79,11 @@
   }
 
   img {
-    max-width: 100px;
+    max-width: 200px;
     border-radius: 50%;
 
     @include breakpoint($large) {
-      padding: 2px;
+      padding: 5px;
       border: 1px solid $border-color;
     }
   }
