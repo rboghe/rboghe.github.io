@@ -11,21 +11,14 @@ redirect_from:
 
 Education
 ======
-* B.S. in Testing Science, Testing University, 2012
-* M.S. in Testonomy, Testing University, 2014
-* Ph.D in Testology, Testing University, 2017 (expected)
+* M.S. in Building Engineering and Architecture, University of Pisa, 2020
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Testing University
-  * Duties included: Running Tests
-  * Supervisor: Professor Travis
-
-* Fall 2015: Research Assistant
-  * Testing University
-  * Duties included: Running Tests
-  * Supervisor: Professor Travis
+* Jan 2019 - March 2019: Research Trainee
+  * Idiap Research Institute
+  * Duties included: Building an AI pipeline for energy forecasting at urban scale
+  * Supervisor: Dr. Jerome Kaempf
   
 Skills
 ======
