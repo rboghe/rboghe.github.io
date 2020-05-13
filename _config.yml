@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Dr. Test Account"
+title                    : "                 "
 title_separator          : "-"
-name                     : &name "Dr. Test Account"
-description              : &description "Research scientist at Test University"
-url                      : https://getorg-testacct.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Roberto Boghetti"
+description              : &description "Engineer, AI researcher"
+url                      : https://rboghe.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "getorg-testacct.github.io"
+repository               : "rboghe.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -77,12 +77,12 @@ analytics:
 
 # Site Author
 author:
-  name             : "Dr. Test Account"
+  name             : "Roberto Boghetti"
   avatar           : "profile.png"
-  bio              : "Research scientist at Test University, expert in all things test and account related"
-  location         : "Test, California"
+  bio              : "Engineer, AI researcher"
+  location         : "Pietrasanta, Italy"
   employer         : 
-  googlescholar    : "http://scholar.google.com/this-is-a-test"
+  googlescholar    : "https://scholar.google.com/citations?user=FWBzV0cAAAAJ&hl=en&oi=sra"
   email            : 
   uri              : 
   bitbucket        :
@@ -96,14 +96,14 @@ author:
   keybase          :
   instagram        : 
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/testaccount"
+  linkedin         : "https://www.linkedin.com/in/roberto-boghetti/"
+  orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "testaccount-this-is-fake"
+  twitter          : 
   vine             :
   weibo            :
   xing             :
