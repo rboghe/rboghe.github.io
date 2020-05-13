@@ -52,7 +52,7 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-5;
+  font-size: $type-size-6;
 
   & + p {
     text-indent: 0;
@@ -139,7 +139,7 @@
 
     .archive__item-excerpt {
       display: block;
-      font-size: $type-size-5;
+      font-size: $type-size-6;
     }
   }
 }
@@ -215,7 +215,7 @@
 
   &--center {
     @include full();
-    font-size: 1.25rem;
+    font-size: 1rem;
 
     .archive__item-teaser {
       margin-bottom: 2em;
