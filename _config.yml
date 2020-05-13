@@ -82,7 +82,7 @@ author:
   bio              : "Engineer, AI researcher"
   location         : "Pietrasanta, Italy"
   employer         : 
-  googlescholar    : "https://scholar.google.com/citations?user=FWBzV0cAAAAJ&hl=en&oi=sra"
+  googlescholar    : #"https://scholar.google.com/citations?user=FWBzV0cAAAAJ&hl=en&oi=sra"
   email            : 
   uri              : 
   bitbucket        :
