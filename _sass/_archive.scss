@@ -157,7 +157,7 @@
 
 .feature__item {
   margin-bottom: 2em;
-  font-size: 1.25rem;
+  font-size: 0.75rem; // 1.25
 
   @include breakpoint($small) {
     margin-bottom: 0;
