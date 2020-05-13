@@ -55,6 +55,10 @@ p {
   margin-bottom: 1.3em;
 }
 
+p {
+  font-size: $type-size-6;  // This
+}
+
 u,
 ins {
   text-decoration: none;
