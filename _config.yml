@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "  Home"
+title                    : "\s\sHome"
 title_separator          : "--------"
 name                     : &name "Roberto Boghetti"
 description              : &description "Engineer, AI researcher"
