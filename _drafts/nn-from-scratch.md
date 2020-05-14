@@ -16,7 +16,7 @@ Among the exotic buzzwords that are becoming increasingly present in our lives, 
 
 The first artificial neural network dates back to 1943, when  the neuroscientist Warren S. McCulloch and the logician Walter Pitts proposed the idea of a perceptron: a single computing neuron capable of solving linear binary classification problems. Its funcioning was relatively simple: given a set of inputs *x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub>*, and a single output *y*, multiply each input *x<sub>i</sub>* for a weight *w<sub>i</sub>*, normalized in the range (0, 1) or (-1, 1) and sum the results. If you get a positive number output a 1, otherwise a 0. Figure 1 shows a schematic generalization of the perceptron:
 
-![A single neuron](https://github.com/rboghe/rboghe.github.io/blob/master/images/nn/neuron.png){:height="50%" width="50%"}
+![A single neuron](https://github.com/rboghe/rboghe.github.io/blob/master/images/nn/neuron.png = 100x100)
 
 Where *f* denotes an activation function, which is responsible of determining the output behaviour of a neuron: whether it "fires" a value, or returns 0. In the case of McCulloch-Pitts perceptron, the activation function was limited to outputting a 0, for negative sums, or a 1, for positive sums.
 
