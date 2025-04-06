@@ -1,0 +1,156 @@
+- authors:
+    - Michael Papinutto
+    - Roberto Boghetti
+    - Moreno Colombo
+    - Chantal Basurto
+    - Kornelius Reutter
+    - Denis Lalanne
+    - Jérôme H Kämpf
+    - Julien Nembrini
+  title: "Saving energy by maximising daylight and minimising the impact on occupants: An automatic lighting system approach"
+  venue: Energy and Buildings, 268, 112176
+  year: 2022
+  links:
+    doi: https://doi.org/10.1016/j.enbuild.2022.112176
+
+- authors:
+    - Valeria Todeschi
+    - Roberto Boghetti
+    - Jérôme H Kämpf
+    - Guglielmina Mutani
+  title: "Evaluation of urban-scale building energy-use models and tools—application for the city of Fribourg, Switzerland"
+  venue: Sustainability, 13(4), 1595
+  year: 2021
+  links:
+    doi: https://doi.org/10.3390/su13041595
+
+- authors:
+    - Giulia Lamberti
+    - Roberto Boghetti
+    - Jérôme H Kämpf
+    - Fabio Fantozzi
+    - Francesco Leccese
+    - Giacomo Salvadori
+  title: "Development and comparison of adaptive data-driven models for thermal comfort assessment and control"
+  venue: Total Environment Research Themes, 8, 100083
+  year: 2023
+  links:
+    doi: https://doi.org/10.1016/j.totert.2023.100083
+
+- authors:
+    - Roberto Boghetti
+    - Fabio Fantozzi
+    - Jérôme H Kämpf
+    - Guglielmina Mutani
+    - Giacomo Salvadori
+    - Valeria Todeschi
+  title: "Building energy models with Morphological urban-scale parameters: A case study in Turin"
+  venue: Building Simulation Applications BSA 2020, 131-139
+  year: 2020
+  links:
+    url: https://publications.ibpsa.org/conference/paper/?id=bsa2019_9788860461766_17
+
+- authors:
+    - Roberto Boghetti
+    - Fabio Fantozzi
+    - Jérôme H Kämpf
+    - Giacomo Salvadori
+  title: "Understanding the performance gap: A machine learning approach on residential buildings in Turin, Italy"
+  venue: "Journal of Physics: Conference Series, 1343(1), 012042"
+  year: 2019
+  links:
+    doi: https://doi.org/10.1088/1742-6596/1343/1/012042
+
+- authors:
+    - Roberto Boghetti
+    - Jérôme H Kämpf
+  title: "Verification of an open-source Python library for the simulation of district heating networks with complex topologies"
+  venue: Energy, 290, 130169
+  year: 2024
+  links:
+    doi: https://doi.org/10.1016/j.energy.2023.130169
+    code: https://github.com/idiap/pydhn/
+
+- authors:
+    - Chantal Basurto
+    - Roberto Boghetti
+    - Moreno Colombo
+    - Michael Papinutto
+    - Julien Nembrini
+    - Jérôme H Kämpf
+  title: "Implementation of machine learning techniques for the quasi real-time blind and electric lighting optimization in a controlled experimental facility"
+  venue: "Journal of Physics: Conference Series, 2042(1), 012112"
+  year: 2021
+  links:
+    doi: https://doi.org/10.1088/1742-6596/2042/1/012112
+
+- authors:
+    - Chantal Basurto
+    - Michael Papinutto
+    - Moreno Colombo
+    - Roberto Boghetti
+    - Kornelius Reutter
+    - Julien Nembrini
+    - Jérôme H Kämpf
+  title: "Integrating daylight with general and task lighting: A longitudinal in-the-wild study in individual and open space working areas"
+  venue: Solar Energy Advances, 2, 100027
+  year: 2022
+  links:
+    doi: https://doi.org/10.1016/j.seja.2022.100027
+
+- authors:
+    - Giulia Lamberti
+    - Roberto Boghetti
+    - Fabio Fantozzi
+    - Francesco Leccese
+    - Giacomo Salvadori
+  title: "Analysing the potential of open hotel review databases for IEQ assessment: A text mining approach"
+  venue: Building Research & Information, 53(1-2), 261-279
+  year: 2025
+  links:
+    doi: https://doi.org/10.1080/09613218.2024.2392117
+
+- authors:
+    - Michael Papinutto
+    - Moreno Colombo
+    - Roberto Boghetti
+    - Chantal Basurto
+    - Kornelius Reutter
+    - Denis Lalanne
+    - Jérôme H Kämpf
+    - Julien Nembrini
+  title: "Enhancing user acceptance in automated systems with human-centric lighting: the role of visual comfort, personality, and preference"
+  venue: "Journal of Physics: Conference Series, 2600(11), 112004"
+  year: 2023
+  links:
+    doi: https://doi.org/10.1088/1742-6596/2600/11/112004
+
+- authors:
+    - Roberto Boghetti
+    - Jérôme H Kämpf
+  title: "A benchmark for the simulation of meshed district heating networks based on anonymised monitoring data"
+  venue: "Journal of Physics: Conference Series, 2600(2), 022008"
+  year: 2023
+  links:
+    doi: https://doi.org/10.1088/1742-6596/2600/2/022008
+
+- authors:
+    - Roberto Boghetti
+    - Giuseppe Peronato
+    - Jérôme Kämpf
+  title: "Verification of PyDHN - a Python library for the thermo-hydraulic simulation of district heating networks - through the DESTEST"
+  venue: "Proceedings of Building Simulation 2023: 18th Conference of IBPSA, 18"
+  year: 2023
+  links:
+    doi: https://doi.org/10.26868/25222708.2023.1592
+    code: https://github.com/idiap/pydhn/tree/main/DESTEST
+
+- authors:
+    - Giuseppe Peronato
+    - Roberto Boghetti
+    - Jérôme H Kämpf
+  title: "A machine-learning model for the prediction of aggregated building heating demand from pan-European land-use maps"
+  venue: "Journal of Physics: Conference Series, 2042(1), 012019"
+  year: 2021
+  links:
+    doi: https://doi.org/10.1088/1742-6596/2042/1/012019

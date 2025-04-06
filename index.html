@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberto Boghetti | Personal Page</title>
+    <meta name="description" content="A place to collect my work and share thoughts on AI, sustainability, and whatever else catches my interest.">
+
+    <!-- OG Meta Tags -->
+    <meta property="og:title" content="Roberto Boghetti | Personal Page">
+    <meta property="og:description" content="A place to collect my work and share thoughts on AI, sustainability, and whatever else catches my interest.">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:url" content="YOUR_WEBSITE_URL_HERE"> --> <!-- TODO: Replace with actual URL when online -->
+    <!-- <meta property="og:image" content="YOUR_IMAGE_URL_HERE"> --> <!-- TODO: Add a preview image URL if you have time -->
+    <meta name="twitter:card" content="summary">
+
+    <!-- Preload Fonts -->
+    <!-- <link rel="preload" href="static/fonts/poppins-v22-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+    <!-- <link rel="preload" href="static/fonts/poppins-v22-latin-300.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+    <!-- <link rel="preload" href="static/fonts/outfit-v11-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+    <!-- <link rel="preload" href="static/fonts/outfit-v11-latin-600.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+        
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicons (see https://stackoverflow.com/q/48956465/)-->
+    <link rel="icon" type="image/png" href="static/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="static/icons/favicon.svg" />
+    <link rel="shortcut icon" href="static/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="static/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="static/icons/site.webmanifest" />
+    <!-- For Fallback in Case webmanifest fails to load -->
+    <meta name="msapplication-TileColor" content="#2c2c2c">
+    <meta name="theme-color" content="#2c2c2c">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <ul>
+                <li><a href="index.html" class="active">About</a></li>
+                <li><a href="blog.html">Thoughts</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="talks.html">Talks</a></li>
+                <li><a href="vitae.html">Vitae</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+
+            <!-- H1 -->
+            <h1 class="intro-greeting">
+                Hi, I'm Roberto!
+                <span class="emoji" role="img" aria-label="waving sloth">🦥</span>
+            </h1>
+
+            <!-- About Me section -->
+            <section class="intro-block">
+                <div class="intro-lead">
+                    <p>
+                        I work at the intersection of sustainability and
+                        <span class="tooltip-trigger" data-term="ml" aria-describedby="tooltip-bubble">Machine Learning</span>,
+                        with a focus on surrogate modeling for complex energy systems.
+                    </p>
+                    <p>Currently, I am a Marie Curie PhD candidate at EPFL and Idiap, exploring how <span class="define" data-term="Graph Neural Networks">Graph Neural Networks</span> (GNNs) can learn to simulate large thermal grids.</p>
+                    <p>I'm also one of the founders and life-long fan of <a href="https://www.instagram.com/hydra_dodgeball_viareggio" target="_blank" rel="noopener noreferrer">Hydra Dodgeball Viareggio</a>.</p>
+                </div>
+
+                <!-- Social links -->
+                <ul class="social-links">
+                    <li><a href="mailto:rboghetti@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><span class="fas fa-envelope" aria-hidden="true"></span></a></li>
+                    <li><a href="https://scholar.google.com/citations?user=FWBzV0cAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><span class="fas fa-graduation-cap" aria-hidden="true"></span></a></li>
+                    <li><a href="https://orcid.org/0000-0001-8843-672X" target="_blank" rel="noopener noreferrer" aria-label="ORCID"><span class="fab fa-orcid" aria-hidden="true"></span></a></li>
+                    <li><a href="https://linkedin.com/in/roberto-boghetti" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="fab fa-linkedin-in" aria-hidden="true"></span></a></li>
+                    <li><a href="https://github.com/rboghe" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><span class="fab fa-github" aria-hidden="true"></span></a></li>
+                </ul>
+            </section>
+            <!-- === INTRO BLOCK END === -->
+
+
+            <!-- === LATEST NEWS SECTION === -->
+            <section id="news">
+                <h2>Latest News</h2>
+                <ul>
+                    <li><strong>Mar 2025:</strong> I'll be giving a talk at PyData Valais on "Graph Neural Networks: Successes and Challenges in the Analysis of Energy Grids" [<a href="talks.html">Details</a>]</li>
+                    <li><strong>Feb 2025:</strong> Our paper "Comparing Rule-based Supply Temperature Control Strategies in Multi-Source District Heating Networks" was accepted for oral presentation at CEES2025. </li>
+                </ul>
+            </section>
+            <!-- === LATEST NEWS SECTION END === -->
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            © <span id="current-year"></span> Roberto Boghetti | Powered by coffee ☕.
+        </div>
+    </footer>
+
+    <div id="tooltip-bubble"></div>
+    <script src="js/footer.js" defer></script> <!-- Footer Year -->   
+    <script src="js/tooltip.js" defer></script> <!-- Tooltip -->   
+</body>
+</html>
