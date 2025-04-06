@@ -1,0 +1,839 @@
+/* --- Reset & Base --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Page Size */
+    --max-width-page: 640px;
+
+    /* Colors */
+    /* Main Colors */
+    --bg-color: #0f0f0f;                /* Dark background */
+    --text-color: #E0E0E0;              /* Base text color */
+    --primary-color: #4DB6AC;           /* Accent color */
+    --primary-color-rgb: 77, 182, 172;    /* RGB for primary color */
+    --secondary-color: #80CBC4;         /* Lighter accent color variant */
+    --border-color: #2c2c2c;            /* Border color */
+    --muted-color: #9E9E9E;             /* Muted color */
+    /* Navigation Bar */
+    --nav-bg: var(--bg-color);            /* Matches background */
+    /* Links */
+    --link-color: var(--primary-color);
+    --link-hover-color: var(--secondary-color);
+    /* Buttons */
+    --button-bg: var(--primary-color);
+    --button-text: #FFFFFF;
+    --button-hover-bg: var(--secondary-color);
+    /* Tooltips */
+    --tooltip-bg: #F8F9FA;              /* Tooltip background */
+    --tooltip-dark-text: #000;          /* Tooltip title text */
+    --tooltip-text: #212529;            /* Tooltip main text */
+    --tooltip-muted-text: #6c757d;      /* Tooltip secondary text */
+
+    /* Fonts */
+    --font-heading: 'Outfit', sans-serif;       /* Outfit for headings */
+    --font-body: 'Poppins', sans-serif;         /* Poppins for body */
+
+    /* Fonts weight */
+    --font-weight-light: 300; 
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600; 
+    --font-weight-bold: 700;
+
+    /* Spacing */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2.5rem;
+
+    /* Transitions */
+    --transition-speed: 0.2s;
+    --transition-ease: ease-in-out;
+
+    /* Borders */
+    --border-radius: 4px;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable; /* Avoid adjusting for scrollbar */
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-light); 
+    line-height: 1.7;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: var(--max-width-page);
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+main {
+    flex-grow: 1;
+    padding: var(--spacing-xl) 0;
+    margin-top: var(--spacing-xl);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-semibold); 
+    line-height: 1.4;
+    margin: calc(var(--spacing-unit) * 4) 0 calc(var(--spacing-unit) * 2) 0;
+    color: var(--text-color);
+}
+
+h1 { font-size: 2.5rem; font-weight: var(--font-weight-bold); letter-spacing: -0.02em; } 
+
+h2 { font-size: 1.6rem; }
+
+h3 { font-size: 1.2rem; }
+
+p {
+    margin-bottom: var(--spacing-md);
+    max-width: var(--max-width-page);
+    font-weight: var(--font-weight-light); 
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color var(--transition-speed) var(--transition-ease); 
+}
+
+a:hover {
+    color: var(--text-color); 
+}
+
+ul {
+    list-style-position: outside;
+    padding-left: var(--spacing-lg); /* Indent list items */
+    margin-bottom: var(--spacing-md);
+}
+
+li {
+    margin-bottom: var(--spacing-sm);
+}
+
+section {
+    margin-bottom: var(--spacing-xl);
+}
+
+strong {
+    font-weight: var(--font-weight-semibold); 
+    color: var(--secondary-color);
+}
+
+em {
+    font-style: italic;
+}
+
+/* --- Font Data, thanks to https://gwfh.mranftl.com/fonts --- */
+/* poppins-300 - latin */
+@font-face {
+    font-display: auto; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../static/fonts/poppins-v22-latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../static/fonts/poppins-v22-latin-300.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* poppins-300italic - latin */
+@font-face {
+    font-display: auto; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../static/fonts/poppins-v22-latin-300italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../static/fonts/poppins-v22-latin-300italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* poppins-regular - latin */
+@font-face {
+    font-display: auto; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../static/fonts/poppins-v22-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../static/fonts/poppins-v22-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* poppins-italic - latin */
+@font-face {
+    font-display: auto; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../static/fonts/poppins-v22-latin-italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../static/fonts/poppins-v22-latin-italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* outfit-regular - latin */
+@font-face {
+    font-display: auto; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../static/fonts/outfit-v11-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../static/fonts/outfit-v11-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* outfit-600 - latin */
+@font-face {
+    font-display: auto; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../static/fonts/outfit-v11-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../static/fonts/outfit-v11-latin-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* outfit-700 - latin */
+@font-face {
+    font-display: auto; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../static/fonts/outfit-v11-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../static/fonts/outfit-v11-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+
+/* --- Navigation --- */
+nav {
+    background-color: var(--nav-bg);
+    padding: var(--spacing-md) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: var(--font-weight-normal); 
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-color var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom-color: var(--secondary-color);
+}
+
+nav ul a.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+/* --- Footer --- */
+footer {
+    padding: var(--spacing-lg) 0;
+    margin-top: var(--spacing-xl);
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--muted-color);
+}
+
+/* --- Page Specific Styles --- */
+
+/* Index Page Intro */
+.intro-greeting {
+    margin-bottom: var(--spacing-lg); /* Add some space below greeting */
+}
+
+@keyframes wave { /* Wave animation for emoji */
+    0%, 100% { transform: rotate(0deg); }
+    20% { transform: rotate(20deg); }  
+    40% { transform: rotate(-15deg); }
+    60% { transform: rotate(10deg); }
+    80% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }   
+}
+
+.intro-greeting .emoji { /* Emoji animation */
+    display: inline-block; 
+    margin-left: var(--spacing-sm);
+    font-size: 3rem; 
+    animation: wave 1s 1;
+    vertical-align: top;
+    transform-origin: 0% 70%;  /* Pivot point on the liana */
+    animation-timing-function: ease-in-out;
+}
+
+
+/* Style for the lead paragraphs */
+p.intro-lead,
+div.intro-lead p { 
+    font-size: 1.15rem; /* Slightly larger text for emphasis */
+    line-height: 1.9; 
+    margin-bottom: var(--spacing-lg); /* Space between intro paragraphs */
+    color: var(--text-color); 
+}
+
+/* Index / About */
+.tagline {
+    font-size: 1.2rem;
+    color: var(--muted-color);
+    margin-top: calc(-1 * var(--spacing-sm));
+    margin-bottom: var(--spacing-xl);
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+.social-links li { margin: 0; }
+.social-links a {
+    text-decoration: none;
+    color: var(--muted-color); /* Make icons/links less prominent */
+    display: inline-flex; /* Helps aligning icon and text */
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.social-links a:hover, 
+.social-links a:focus {
+    color: var(--link-hover-color);
+    text-decoration: none; /* No underline for icon links */
+}
+
+#news ul {
+    list-style: none;
+    padding: 0;
+}
+#news li {
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-md);
+    position: relative;
+    border-left: 3px solid var(--border-color);
+}
+
+#news li strong { /* Keep date prominent */
+    display: block;
+    margin-bottom: 0.2rem;
+    color: var(--primary-color);
+}
+
+#news a {
+    white-space: nowrap;
+    color: var(--link-color); /* Ensure links use link color */
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 3px;
+}
+
+/* Publications & Talks Lists */
+.publications-list ul, 
+.talks-list ul {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--spacing-lg);
+}
+
+.publications-list li, 
+.talks-list li {
+    margin-bottom: var(--spacing-lg);
+    padding-left: var(--spacing-sm);
+    line-height: 1.6;
+}
+
+.publications-list li strong  {         /* Author name */
+    color: var(--secondary-color);      /* Use secondary accent for highlight */
+}
+
+
+.publications-list li a,
+.talks-list li a {
+    white-space: nowrap;
+    font-size: 0.9rem;
+    color: var(--link-color);
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 3px;
+}
+
+.publications-list li a:hover,
+.talks-list li a:hover {
+    text-decoration-style: solid;
+    color: var(--link-hover-color);
+}
+
+/* Specifics for Talks List */
+.talks-list li strong {                 /* Date */
+    display: block;
+    color: var(--muted-color);          /* Make date muted */
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    font-weight: var(--font-weight-normal); 
+}
+
+.talks-list li em {             /* Event name */
+    margin-top: 0.1rem;
+    color: var(--muted-color);
+}
+
+.publications-list h2, 
+.talks-list h2 {
+    margin-top: var(--spacing-xl); 
+}
+
+/* === Publication List Styling === */
+
+.publications-list ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;       /* Remove default padding */
+}
+
+.publications-list li {
+    margin-bottom: var(--spacing-lg); /* Space between publication entries */
+    padding-left: 0; /* Ensure no inherited padding */
+}
+
+/* Style for each paragraph line within a publication entry */
+.publications-list li p {
+     margin-bottom: 0.1rem; /* Consistent small space between lines */
+     line-height: 1.5;      /* Slightly tighter line height for list items */
+}
+
+/* Remove bottom margin from the very last paragraph in the list item */
+.publications-list li p:last-child {
+    margin-bottom: 0;
+}
+
+/* Style for paragraphs within a talk list item */
+.talks-list li p {
+    margin-bottom: 0.1rem; /* Consistent small space between lines */
+    line-height: 1.5;      /* Match publication list style */
+}
+/* Remove bottom margin from the very last paragraph in the list item */
+.talks-list li p:last-child {
+    margin-bottom: 0;
+}
+
+
+.talks-list li
+.talk-location {
+    font-style: normal; /* Override potential inherited italics */
+    color: var(--muted-color); /* Make location less prominent */
+    font-size: 0.95em; /* Slightly smaller than event text */
+}
+
+/* Author list styling */
+.pub-authors {
+    font-size: 0.9rem;        /* Reduced font size */
+    color: var(--muted-color); /* Use muted color */
+}
+/* Ensure owner's name still stands out */
+.pub-authors strong {
+    font-weight: var(--font-weight-semibold); 
+    color: var(--secondary-color); /* Use accent color or adjust as preferred */
+}
+
+/* Title styling */
+.pub-title {
+    font-size: 1.0rem;
+    font-weight: var(--font-weight-normal); 
+    color: var(--text-color); /* Main text color */
+}
+
+/* Venue/Year styling */
+.pub-venue {
+    font-size: 0.95rem;       /* Slightly smaller than title */
+    color: var(--text-color); /* Main text color */
+    font-style: italic;
+}
+
+/* Styling for individual links within the links line */
+p.pub-links {
+    font-size: 0.9rem;
+}
+
+.pub-links a {
+    white-space: nowrap;
+    font-size: 0.9rem;
+    color: var(--link-color);
+    text-decoration: underline;
+    text-decoration-style: solid; 
+    text-underline-offset: 3px;
+}
+
+.pub-links a:last-child {
+    margin-right: 0; /* No margin after the last link */
+}
+
+.pub-links a:hover {
+    color: var(--link-hover-color);
+    text-decoration-style: solid;
+}
+
+/* Blog */
+hr.post-divider {
+    border: 0;
+    height: 1px;
+    background-color: var(--border-color);
+    margin: var(--spacing-xl) 0;
+}
+
+.post-preview h2 {
+    border-bottom: none;
+    margin-bottom: var(--spacing-sm);
+}
+
+.post-preview h2 a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.post-preview h2 a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.post-meta {
+    font-size: 0.9rem;
+    color: var(--muted-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.post-excerpt {
+    color: var(--muted-color); 
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.6; /* Base line-height for excerpt */
+}
+
+/* Style paragraphs only inside the excerpt div */
+.post-excerpt p {
+    margin-bottom: var(--spacing-sm); /* Add space between paragraphs within the excerpt */
+    color: inherit; /* Inherit muted color from container */
+    line-height: inherit; /* Inherit line-height */
+}
+
+/* Remove margin from the last paragraph inside the excerpt */
+.post-excerpt p:last-child {
+    margin-bottom: 0;
+}
+
+/* Style for the read-more link */
+.read-more {
+    display: inline-block; /* Allows margin */
+    margin-top: var(--spacing-sm); /* Add space above read-more link */
+    font-weight: var(--font-weight-normal); 
+}
+
+/* --- Blog Specific Styles --- */
+
+/* Tag Filter Buttons */
+.tag-filter-container {
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.tag-filter-button {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--muted-color);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease, border-color var(--transition-speed) ease;
+}
+
+.tag-filter-button:hover {
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.tag-filter-button.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--button-text); /* Use button text color for active state */
+    font-weight: var(--font-weight-bold);
+}
+
+/* Post Preview Enhancements */
+.post-preview {
+   margin-bottom: var(--spacing-md); /* Reduce margin if divider is present */
+}
+
+.post-tags {
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.tag-badge {
+    display: inline-block;
+    background-color: rgba(var(--primary-color-rgb), 0.15); /* Slightly darker than hover */
+    color: var(--secondary-color);
+    padding: 0.15em 0.5em;
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
+    font-weight: var(--font-weight-normal); 
+}
+
+.post-excerpt {
+    color: var(--muted-color); /* Make excerpt slightly less prominent */
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.6; /* Adjust excerpt line height */
+}
+
+/* Style for full blog post pages */
+.blog-post-full h1 {
+    margin-bottom: var(--spacing-sm);
+}
+.blog-post-full .post-meta {
+    font-size: 0.9rem;
+    color: var(--muted-color);
+    margin-bottom: var(--spacing-lg);
+}
+.blog-post-full 
+.post-meta:last-of-type { /* Reduce margin if two meta lines */
+    margin-bottom: var(--spacing-xl);
+}
+
+.blog-post-full p,
+.blog-post-full h2,
+.blog-post-full ul,
+.blog-post-full ol { /* Standard content spacing */
+    margin-bottom: var(--spacing-md);
+}
+
+/* Vitae */
+.button {
+    display: inline-block;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: var(--font-weight-bold); 
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+    border: none;
+    cursor: pointer;
+    margin-bottom: var(--spacing-lg);
+}
+
+.button:hover, .button:focus {
+    background-color: var(--button-hover-bg);
+    color: var(--button-text); /* Ensure text color remains consistent */
+    text-decoration: none;
+}
+
+#vitae ul {
+    list-style: none;
+    padding: 0;
+}
+#vitae li {
+    margin-bottom: var(--spacing-md);
+}
+
+#vitae li strong {
+    color: var(--text-color);   /* Use normal text color for titles */
+    font-weight: var(--font-weight-bold);
+}
+
+#vitae li em {
+    color: var(--muted-color);  /* Use muted color for text*/
+    font-size: 0.95rem;
+    display: block;
+}
+
+#skills ul {
+    columns: 2; /* Display skills in two columns */
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    column-gap: var(--spacing-xl);
+}
+
+/* Vitae - Teaching Section Specifics */
+#teaching ul {
+    list-style: none;
+    padding-left: 0; /* Remove default UL padding */
+    margin-top: var(--spacing-md); /* Space above the timeline */
+}
+
+#teaching li {
+    position: relative; /* Needed for positioning the pseudo-element */
+    margin-bottom: var(--spacing-lg);
+    padding-left: var(--spacing-xl); /* Make space for line and marker */
+    border-left: 2px solid var(--border-color); /* The timeline */
+}
+
+/* Timeline */
+#teaching li strong {
+    margin-bottom: 0.2rem; /* Space below title */
+    color: var(--text-color);
+    font-weight: var(--font-weight-bold);
+}
+
+#teaching li span.teaching-loc-date,
+#teaching li span.teaching-details {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--muted-color);
+    line-height: 1.5;
+    margin-bottom: 0.1rem;
+    /* padding-left: 0; /* Reset padding */
+}
+
+#teaching li span.teaching-loc-date {
+     color: var(--secondary-color); /* Use accent color */
+     font-weight: var(--font-weight-normal); /* Slightly bolder than light */
+    margin-bottom: 0.2rem; 
+}
+
+#teaching li span.teaching-details:last-of-type {
+    margin-bottom: 0;
+}
+
+#teaching li span.teaching-details:last-of-type { /* Target only the last detail line */
+    margin-bottom: 0; /* No extra space after the very last detail */
+}
+
+/* Vitae - Projects Section Specifics */
+#projects ul {
+    list-style: none;
+    padding-left: 0;
+}
+#projects li {
+    margin-bottom: var(--spacing-lg);
+}
+#projects li h3 { 
+    margin-bottom: 0.2rem;
+}
+#projects li p {
+    margin-bottom: 0.3rem;
+}
+
+/* Ensure the last paragraph, especially the one with links, has no bottom margin */
+#projects li p:last-child,
+#projects li p.pub-links {
+    margin-bottom: 0;
+}
+
+
+/* --- Tooltip Feature --- */
+.tooltip-trigger {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--muted-color); /* Use muted color */
+    text-decoration-thickness: 1px;             
+    text-underline-offset: 3px; /* Slight space between text and line */
+    text-decoration-skip-ink: auto; /* Improves look with g, p, y, etc... */
+    cursor: help;
+    position: relative;
+    transition: text-decoration-color var(--transition-speed) ease; /* Smooth transition on hover */
+}
+
+.tooltip-trigger:hover {
+    text-decoration-color: var(--primary-color); /* Brighten underline on hover */
+}
+
+#tooltip-bubble {
+    position: absolute;
+    background-color: var(--tooltip-bg);
+    color: var(--tooltip-text); 
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius);
+    /* Use a subtle border instead of shadow for tooltip */
+    border: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    line-height: 1.4;
+    max-width: 250px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-speed) ease, visibility 0s linear var(--transition-speed);
+    pointer-events: none;
+}
+
+.tooltip-type {
+    display: block; /* Display on its own line below the word */
+    font-size: 0.8rem; /* Slightly smaller */
+    color: var(--tooltip-muted-text); 
+    margin-bottom: 0.3rem; /* Space before phonetic or definition */
+    font-style: italic; 
+}
+
+#tooltip-bubble.visible {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+.tooltip-word {
+    font-weight: var(--font-weight-bold);
+    display: block;
+    margin-bottom: 0.2rem;
+    color: var(--tooltip-dark-text); 
+}
+
+
+.tooltip-phonetic {
+    font-style: italic;
+    color: var(--tooltip-muted-text); /* Tooltip muted grey */
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.tooltip-def {
+    font-weight: var(--font-weight-normal); 
+}
+
+/* --- Responsiveness --- */
+@media (max-width: var(--max-width-page)) {
+    html { font-size: 15px; }
+    .container { width: 95%; }
+
+    nav ul { gap: var(--spacing-md); flex-wrap: wrap; justify-content: center;} /* Allow wrapping and center */
+
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.6rem; }
+
+    .social-links { gap: var(--spacing-md); }
+    #skills ul { columns: 1; -webkit-columns: 1; -moz-columns: 1; } /* Single column skills on mobile */
+
+}
