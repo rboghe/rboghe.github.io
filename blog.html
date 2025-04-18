@@ -37,13 +37,18 @@
 <body>
     <nav>
         <div class="container nav-container">
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="blog.html" class="active">Thoughts</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="talks.html">Talks</a></li>
-                <li><a href="vitae.html">Vitae</a></li>
-            </ul>
+            <button class="nav-dropdown-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="nav-arrow"></span>
+            </button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="blog.html" class="active">Thoughts</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="talks.html">Talks</a></li>
+                    <li><a href="vitae.html">Vitae</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -62,13 +67,13 @@
             <div class="blog-posts-list">
                 
                 <article class="post-preview" data-tags="pydhn">
-                    <h2><a href="posts/20241030_pydhn_release_v_0_1_3.html">PyDHN Release v0.1.3: Docs, Finally!</a></h2>
+                    <h2><a href="posts\20241030_pydhn_release_v_0_1_3.html">PyDHN Release v0.1.3: Docs, Finally!</a></h2>
                     <p class="post-meta">Published on October 30, 2024</p>
                     <div class="post-tags"><span class="tag-badge" data-tag="pydhn">PyDHN</span></div>
                     <div class="post-excerpt">
                         <p class="">Hey everyone! PyDHN gets a much needed update with v0.1.3. It's a minor update, but it contains some nice improvements...</p>
                     </div>
-                    <p><a href="posts/20241030_pydhn_release_v_0_1_3.html">Read more &rarr;</a></p>
+                    <p><a href="posts\20241030_pydhn_release_v_0_1_3.html">Read more &rarr;</a></p>
                 </article>
             </div> <!-- end blog-posts-list -->
         </div> <!-- end container -->
@@ -83,6 +88,7 @@
     <!-- Scripts -->
     <script src="js/footer.js"></script> <!-- Footer Year -->
     <script src="js/blog-filter.js"></script> <!-- Filtering Logic -->
-    <!-- Add other scripts if needed -->
+    <script src="js/nav-dropdown.js" defer></script> <!-- Dropdown Navigation Toggle -->
+
 </body>
 </html>

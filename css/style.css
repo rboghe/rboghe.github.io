@@ -213,23 +213,63 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
+    /* Ensure nav stays above tooltip */
+    position: relative; 
 }
 
 .nav-container {
     display: flex;
-    justify-content: center; /* Center the nav items */
+    justify-content: center; /* Center nav items */
     align-items: center;
+    position: relative; /* Needed for absolute positioning of toggle */
 }
 
-nav ul {
+/* Hide dropdown toggle button on larger screens */
+.nav-dropdown-toggle {
+    display: none; /* Hidden by default on large screens */
+    background: none;
+    border: none;
+    padding: var(--spacing-sm); /* Add some padding for easier clicking */
+    cursor: pointer;
+    line-height: 0; /* Prevent extra space */
+    position: absolute; /* Position relative to nav-container */
+    /* Centering will be handled in media query */
+    z-index: 110; /* Ensure button is above links */
+}
+
+/* Styling the arrow icon */
+.nav-arrow {
+    display: inline-block;
+    width: 12px; /* Arrow width */
+    height: 12px; /* Arrow height */
+    border: solid var(--text-color);
+    border-width: 0 2px 2px 0; /* Creates the chevron shape */
+    transform: rotate(45deg); /* Point down */
+    transition: transform var(--transition-speed) var(--transition-ease);
+}
+
+/* Rotate arrow when dropdown is open */
+.nav-dropdown-toggle[aria-expanded="true"] .nav-arrow {
+    transform: rotate(-135deg); /* Point up */
+}
+
+
+/* Default Nav Links container */
+.nav-links {
+    /* Takes up available space on larger screens */
+    display: flex; 
+    justify-content: center;
+}
+
+.nav-links ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    display: flex; /* Horizontal layout by default */
     gap: var(--spacing-lg);
 }
 
-nav ul li {
+.nav-links ul li {
     margin: 0;
 }
 
@@ -824,16 +864,104 @@ hr.post-divider {
 }
 
 /* --- Responsiveness --- */
-@media (max-width: var(--max-width-page)) {
+/* Using 411px as it's just below Pixel 6, on which the full menu still looks nice */
+@media (max-width: 411px) {
     html { font-size: 15px; }
     .container { width: 95%; }
 
-    nav ul { gap: var(--spacing-md); flex-wrap: wrap; justify-content: center;} /* Allow wrapping and center */
+    .nav-container {
+        justify-content: center; /* Center the toggle button */
+        height: 50px; /* Ensure consistent height for positioning */
+    }
 
-    h1 { font-size: 2.2rem; }
-    h2 { font-size: 1.6rem; }
+    .nav-dropdown-toggle {
+        display: inline-block; /* Show the dropdown button */
+        position: relative; /* Reset absolute positioning */
+        right: auto;
+        top: auto;
+        transform: none;
+    }
 
-    .social-links { gap: var(--spacing-md); }
-    #skills ul { columns: 1; -webkit-columns: 1; -moz-columns: 1; } /* Single column skills on mobile */
+    .nav-links {
+        /* Dropdown styles */
+        display: block; /* Needed for visibility toggle */
+        visibility: hidden; /* Hide by default */
+        opacity: 0; 
+        position: absolute;
+        top: 100%; /* Position below the nav bar */
+        left: 0; 
+        right: 0; 
+        width: 100%; /* Explicit full width */
+        background-color: var(--nav-bg); 
+        padding: var(--spacing-md) 0; /* Padding top/bottom */
+        border-radius: 0; 
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Very slight shadow */
+        /*border-top: 1px solid var(--border-color); */ /* Separator line, not sure about this */
+        z-index: 105; /* Below toggle, above main content */
+        transform: translateY(-20px); /* Start slightly up for transition */
+        transition: opacity var(--transition-speed) ease, visibility 0s linear var(--transition-speed), transform var(--transition-speed) ease;
+    }
 
-}
+    .nav-links.active {
+        visibility: visible; /* Show links when active */
+        opacity: 1;
+        transform: translateY(0); /* Move down to final position */
+        transition-delay: 0s, 0s, 0s; /* No delay for visibility */
+    }
+
+    .nav-links ul {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center items horizontally */
+        gap: 0; /* Remove gap, padding will handle spacing */
+        width: 100%;
+        margin: 0; /* Reset margin */
+        padding: 0; /* Reset padding */
+        list-style: none; /* Ensure no list bullets */
+    }
+
+    .nav-links ul li {
+        width: 100%;
+        text-align: center; 
+        margin: 0; 
+        position: relative; /* Needed for the active indicator */
+    }
+
+    .nav-links ul a {
+        display: block; /* Make links take full width */
+        padding: var(--spacing-md) var(--spacing-md); /* More vertical padding */
+        border-bottom: none; /* Remove bottom border */
+        color: var(--text-color); /* Ensure default text color */
+        white-space: nowrap; /* Prevent wrapping */
+        transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+    }
+
+    .nav-links ul a:hover,
+    .nav-links ul a:focus {
+        color: var(--primary-color); /* Change text color on hover/focus */
+        background-color: transparent; /* Ensure no background color */
+    }
+
+    .nav-links ul a.active {
+        color: var(--primary-color); /* Active link text color */
+        background-color: transparent; /* Ensure no background color */
+        font-weight: var(--font-weight-semibold); /* Make active link slightly bolder */
+    }
+
+    /* Add a left bar indicator for the active link */
+    .nav-links ul a.active::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px; /* Thickness of the indicator bar */
+        background-color: var(--primary-color);
+        transform: scaleY(0.6); 
+        }
+    
+        h1 { font-size: 2.2rem; }
+        h2 { font-size: 1.6rem; }
+
+        .social-links { gap: var(--spacing-md); }
+        #skills ul { columns: 1; -webkit-columns: 1; -moz-columns: 1; } /* Single column skills on mobile */
+    }
