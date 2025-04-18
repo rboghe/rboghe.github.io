@@ -36,13 +36,18 @@
 <body>
     <nav>
         <div class="container nav-container">
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="blog.html">Thoughts</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="talks.html">Talks</a></li>
-                <li><a href="vitae.html" class="active">Vitae</a></li>
-            </ul>
+            <button class="nav-dropdown-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="nav-arrow"></span>
+            </button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="blog.html">Thoughts</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="talks.html">Talks</a></li>
+                    <li><a href="vitae.html" class="active">Vitae</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -232,4 +237,5 @@
         </div>
     </footer>
     <script src="js/footer.js" defer></script> <!-- Footer Year -->
+    <script src="js/nav-dropdown.js" defer></script> <!-- Dropdown Navigation Toggle -->
 </html>

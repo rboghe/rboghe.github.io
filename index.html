@@ -39,13 +39,18 @@
 <body>
     <nav>
         <div class="container nav-container">
-            <ul>
-                <li><a href="index.html" class="active">About</a></li>
-                <li><a href="blog.html">Thoughts</a></li>
+            <button class="nav-dropdown-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="nav-arrow"></span>
+            </button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html" class="active">About</a></li>
+                    <li><a href="blog.html">Thoughts</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="talks.html">Talks</a></li>
-                <li><a href="vitae.html">Vitae</a></li>
-            </ul>
+                    <li><a href="vitae.html">Vitae</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -102,7 +107,8 @@
     </footer>
 
     <div id="tooltip-bubble"></div>
-    <script src="js/footer.js" defer></script> <!-- Footer Year -->   
-    <script src="js/tooltip.js" defer></script> <!-- Tooltip -->   
+    <script src="js/footer.js" defer></script> <!-- Footer Year -->
+    <script src="js/tooltip.js" defer></script> <!-- Tooltip -->
+    <script src="js/nav-dropdown.js" defer></script> <!-- Dropdown Navigation Toggle -->
 </body>
 </html>

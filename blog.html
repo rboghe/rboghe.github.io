@@ -37,13 +37,18 @@
 <body>
     <nav>
         <div class="container nav-container">
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="blog.html" class="active">Thoughts</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="talks.html">Talks</a></li>
-                <li><a href="vitae.html">Vitae</a></li>
-            </ul>
+            <button class="nav-dropdown-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="nav-arrow"></span>
+            </button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="blog.html" class="active">Thoughts</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="talks.html">Talks</a></li>
+                    <li><a href="vitae.html">Vitae</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -83,6 +88,7 @@
     <!-- Scripts -->
     <script src="js/footer.js"></script> <!-- Footer Year -->
     <script src="js/blog-filter.js"></script> <!-- Filtering Logic -->
-    <!-- Add other scripts if needed -->
+    <script src="js/nav-dropdown.js" defer></script> <!-- Dropdown Navigation Toggle -->
+
 </body>
 </html>

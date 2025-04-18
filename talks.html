@@ -37,13 +37,18 @@
 <body>
     <nav>
         <div class="container nav-container">
-            <ul>
-                <li><a href="index.html" class="">About</a></li>
-                <li><a href="blog.html" class="">Thoughts</a></li>
-                <li><a href="publications.html" class="">Publications</a></li>
-                <li><a href="talks.html" class="active">Talks</a></li>
-                <li><a href="vitae.html" class="">Vitae</a></li>
-            </ul>
+            <button class="nav-dropdown-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="nav-arrow"></span>
+            </button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="blog.html">Thoughts</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="talks.html" class="active">Talks</a></li>
+                    <li><a href="vitae.html">Vitae</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <main>
@@ -98,5 +103,6 @@ Urban Morphology, Energy Needs and Artificial Intelligence
         </div>
     </footer>
     <script src="js/footer.js"></script> <!-- Footer Year -->
+    <script src="js/nav-dropdown.js" defer></script> <!-- Dropdown Navigation Toggle -->
 </body>
 </html>
