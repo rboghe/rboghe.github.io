@@ -22,6 +22,7 @@ Python is used for dynamically populating specific pages (Blog index, Publicatio
 │   ├── blog-filter.js
 │   ├── blog-metadata.js
 │   ├── footer.js
+│   ├── nav-dropdown.js
 │   └── tooltip.js
 ├── python/                      # Python scripts 
 │   ├── blog.py
