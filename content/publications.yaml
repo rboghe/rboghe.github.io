@@ -1,12 +1,27 @@
 - authors:
     - Roberto Boghetti
     - Jérôme H Kämpf
-  title: "Optimizing Supply Temperature Control in District Heating Networks via Differentiable Dynamic Simulation and Gradient Descent"
-  venue: Construction, Energy, Environment and Sustainability. ICCEES 2025. Lecture Notes in Civil Engineering, vol 744. 
-  year: 2025
+  title: "Optimizing supply temperature control in district heating networks via differentiable dynamic simulation and gradient descent"
+  venue: Construction, Energy, Environment and Sustainability. ICCEES 2025. Lecture Notes in Civil Engineering, vol 744 
+  year: 2026
   links:
     doi: https://doi.org/10.1007/978-981-95-1826-5_38
     pdf: static/papers/cees2025_final.pdf
+
+- authors:
+    - Dubon Rodrigue
+    - Roberto Boghetti
+    - Jérôme H Kämpf
+    - Bastien Pasdeloup
+    - Mohamed T Mabrouk
+    - Patrick Meyer
+    - Bruno Lacarrière
+  title: "Validation of two distinct simulation models of district heating networks: application to efficient looping analysis"
+  venue: Journal of Physics: Conference Series; 3140
+  year: 2025
+  links:
+    doi: https://doi.org/10.1088/1742-6596/3140/4/042021
+
 
 - authors:
     - Michael Papinutto
