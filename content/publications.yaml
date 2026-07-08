@@ -1,5 +1,23 @@
 - authors:
     - Roberto Boghetti
+  title: "Towards quasi real-time simulations of district heating networks for an optimal sustainable design and control"
+  venue: EPFL Doctoral Thesis
+  year: 2026
+  links:
+    doi: https://doi.org/10.5075/epfl-thesis-11271
+    
+- authors:
+    - Roberto Boghetti
+    - Jean-Marc Odobez
+    - Jérôme H Kämpf
+  title: "Graph neural network-based surrogate modeling for fast and scalable simulations of meshed district heating networks"
+  venue: Energy and AI
+  year: 2026
+  links:
+    doi: https://doi.org/10.1016/j.egyai.2026.100721
+    
+- authors:
+    - Roberto Boghetti
     - Jérôme H Kämpf
   title: "Optimizing supply temperature control in district heating networks via differentiable dynamic simulation and gradient descent"
   venue: Construction, Energy, Environment and Sustainability. ICCEES 2025. Lecture Notes in Civil Engineering, vol 744 
@@ -21,7 +39,6 @@
   year: 2025
   links:
     doi: https://doi.org/10.1088/1742-6596/3140/4/042021
-
 
 - authors:
     - Michael Papinutto

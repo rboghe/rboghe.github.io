@@ -2,7 +2,19 @@
 # List your talks here, newest first is generally easier to maintain.
 # The script will sort by date descending.
 
-- date: 2025-04-24  # YYYY-MM-DD
+- date: 2026-06-24  # YYYY-MM-DD
+  title: "Deep Learning Methods for Fast and Differentiable Simulation of District Heating Networks"
+  event: BSA2026, 5th Student School on Building Simulation Application
+  location: Free University of Bozen-Bolzano, Bozen-Bolzano, Italy
+  links:
+
+- date: 2026-05-11 
+  title: "Learning to Simulate Thermal Networks: Graph Neural Surrogates for Fast and Differentiable Modeling"
+  event: RELAB, Politecnico di Milano
+  location: Milan, Italy
+  links:
+  
+- date: 2025-04-24
   title: "Graph Neural Networks: Successes and Challenges in the Analysis of Energy Grids"
   event: PyData Valais
   location: Idiap, Martigny, Switzerland
