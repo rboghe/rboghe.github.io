@@ -1,0 +1,52 @@
+# talks.yaml
+# List your talks here, newest first is generally easier to maintain.
+# The script will sort by date descending.
+
+- date: 2026-06-24  # YYYY-MM-DD
+  title: "Deep Learning Methods for Fast and Differentiable Simulation of District Heating Networks"
+  event: BSA2026, 5th Student School on Building Simulation Application
+  location: Free University of Bozen-Bolzano, Bozen-Bolzano, Italy
+  links:
+
+- date: 2026-05-11 
+  title: "Learning to Simulate Thermal Networks: Graph Neural Surrogates for Fast and Differentiable Modeling"
+  event: RELAB, Politecnico di Milano
+  location: Milan, Italy
+  links:
+  
+- date: 2025-04-24
+  title: "Graph Neural Networks: Successes and Challenges in the Analysis of Energy Grids"
+  event: PyData Valais
+  location: Idiap, Martigny, Switzerland
+  links:
+    url: https://www.meetup.com/pydata-valais/events/306641732/
+
+- date: 2025-04-17 
+  title: "Graph Neural Networks: Intuition, Misconceptions, and Real-World Challenges in Energy Systems"
+  event: Chiesi
+  location: Parma, Italy
+  links:
+
+- date: 2023-09-05 
+  title: "Economics and Management of Innovation and Technological Change: Lessons Learnt from an Eurotech Course"
+  event: Idiap Tuesday Afternoon Meeting Series
+  location: Idiap, Martigny, Switzerland
+  links:
+
+- date: 2023-03-14 
+  title: "Graph cycles and how they can keep you warm next winter"
+  event: Idiap Tuesday Afternoon Meeting Series
+  location: Idiap, Martigny, Switzerland
+  links:
+
+- date: 2021-11-15
+  title: "Simulating District Heating Networks’ hydraulics with residual physics neural networks"
+  event: Valais/Wallis AI Workshop 7th edition
+  location: Idiap, Martigny, Switzerland
+  links:
+
+- date: 2019-05-07
+  title: "Urban Morphology, Energy Needs and Artificial Intelligence"
+  event: Artificial Intelligence & Energy Symposium
+  location: Idiap, Martigny, Switzerland
+  links:
