@@ -4,6 +4,12 @@ Source code for my personal website. This is primarily a static website built us
 
 Python is used for dynamically populating specific pages (Blog index, Publications, Talks) from content files and templates.
 
+## Deployment
+
+The GitHub Actions workflow builds and deploys the website on pushes to `main`, daily at midnight UTC, or manually from the Actions tab. The daily rebuild keeps the upcoming and past talks lists up to date.
+
+Deployment publishes a Pages artifact directly (no gh-pages commits) and requires *Settings → Pages → Source* to be set to GitHub Actions.
+
 ## Pages
 
 * **About:** Personal introduction.
